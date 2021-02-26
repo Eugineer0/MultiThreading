@@ -42,7 +42,7 @@ public class Main {
 
         startTime = System.currentTimeMillis();
 
-        Parallel.mulParallel(2, vector, matrix);
+        Parallel.mulParallel(threads_number, vector, matrix);
 
         endTime = System.currentTimeMillis();
         System.out.println("Total execution time with Thread: " + (endTime-startTime) + "ms");
@@ -51,7 +51,7 @@ public class Main {
 
         startTime = System.currentTimeMillis();
 
-        Parallel.mulParallel(1, vector, matrix);
+        Parallel.mulParallel(threads_number, vector, matrix);
 
         endTime = System.currentTimeMillis();
         System.out.println("Total execution time with Thread: " + (endTime-startTime) + "ms");
@@ -60,7 +60,7 @@ public class Main {
 
         startTime = System.currentTimeMillis();
 
-        Parallel.mulParallelStream(1, vector, matrix);
+        Parallel.mulParallelStream(threads_number, vector, matrix);
 
         endTime = System.currentTimeMillis();
         System.out.println("Total execution time with Thread: " + (endTime-startTime) + "ms");
